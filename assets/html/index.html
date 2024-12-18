@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+  <div id="text">
+    <h1>Test satu dua tiga</h1>
+  </div>
+  <div id="gundul">
+    Gundul pacul
+  </div>
+  <div id="the-url">
+
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('#gundul').css('background-color', 'red');
+      $("#the-url").load("https://www.chordtela.com/", null, function(resp, textstatus, req){
+        console.log(resp, textstatus);
+      });
+      $("#the-url").text("Gundul");
+    });
+  </script>
+</body>
+
+</html>
