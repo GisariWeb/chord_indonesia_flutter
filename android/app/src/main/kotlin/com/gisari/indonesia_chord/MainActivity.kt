@@ -1,4 +1,4 @@
-package com.gisari.chordindonesia
+package com.gisari.indonesia_chord
 
 import io.flutter.embedding.android.FlutterActivity
 
